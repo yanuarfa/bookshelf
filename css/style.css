@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  src: url("../assets/fonts/Poppins-Bold.otf");
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  transition: 0.4s all;
+  background-color: #b0e3f4;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.3);
+}
+
+nav > h1 {
+  font-size: 2rem;
+  color: rgb(62, 114, 163);
+  margin-left: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+nav > h1:hover {
+  color: rgb(36, 100, 160);
+}
+
+nav > h1::after {
+  content: "∇";
+  font-size: 1rem;
+  position: absolute;
+  top: 2px;
+  right: -16px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  color: #161616;
+}
+
+.sectioninput {
+  width: 800px;
+  padding: 50px 100px;
+  margin: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+  -webkit-box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+  -moz-box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+}
+
+.sectioninput > h2 {
+  text-align: center;
+  color: rgb(62, 114, 163);
+}
+
+.input {
+  margin: 10px 0;
+}
+
+.input > input,
+#findbook > input {
+  border: 1px solid black;
+  padding: 15px;
+  font-size: 0.9rem;
+  border-radius: 30px;
+}
+
+label {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+.input > input:focus {
+  border: 1px solid rgb(100, 100, 224);
+}
+
+#sent {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(100, 158, 245);
+  transition: 0.3s all;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+#sent:hover {
+  background-color: rgb(83, 132, 204);
+  box-shadow: 0 30px 45px 0 rgba(83, 132, 204, 0.15);
+  -webkit-box-shadow: 0 30px 45px 0 rgba(83, 132, 204, 0.15);
+  -moz-box-shadow: 0 30px 45px 0 rgba(83, 132, 204, 0.15);
+}
+
+.sectionsearch {
+  width: 800px;
+  padding: 50px 100px;
+  margin: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+  -webkit-box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+  -moz-box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+}
+
+.sectionsearch > h2 {
+  text-align: center;
+  color: rgb(62, 114, 163);
+}
+
+#findbook {
+  display: flex;
+  justify-content: space-between;
+}
+
+#findtitle {
+  border: 1px solid black;
+  width: 80%;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+#findbook > button {
+  display: block;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(100, 158, 245);
+  transition: 0.3s all;
+  font-size: 1rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+#findbook > button:hover {
+  background-color: rgb(83, 132, 204);
+  box-shadow: 0 30px 45px 0 rgba(83, 132, 204, 0.15);
+  -webkit-box-shadow: 0 30px 45px 0 rgba(83, 132, 204, 0.15);
+  -moz-box-shadow: 0 30px 45px 0 rgba(83, 132, 204, 0.15);
+}
+
+.sectionbook {
+  width: 800px;
+  padding: 50px 100px;
+  margin: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+  -webkit-box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+  -moz-box-shadow: 0 30px 45px 0 rgba(78, 77, 77, 0.15);
+}
+
+.sectionbook > h2 {
+  text-align: center;
+  color: rgb(62, 114, 163);
+}
+
+.bookitem {
+  border: 1px solid rgb(136, 134, 134);
+  padding: 0 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbutton {
+  width: 25px;
+  height: 25px;
+  background: url("../assets/check-outline.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all;
+}
+
+.checkbutton:hover {
+  background: url("../assets/check-solid.svg");
+  background-size: contain;
+  transition: 0.3s all;
+}
+
+.deletebutton {
+  width: 25px;
+  height: 25px;
+  background: url("../assets/trash-outline.svg");
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all;
+}
+
+.deletebutton:hover {
+  background: url("../assets/trash-fill.svg");
+  background-size: contain;
+}
+
+.undobutton {
+  width: 25px;
+  height: 25px;
+  background: url("../assets/undo-ouline.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all;
+}
+
+.undobutton:hover {
+  background: url("../assets/undo-ouline.svg");
+  background-size: contain;
+}
+
+.checkbutton:focus,
+.deletebutton {
+  outline: none;
+}
+
+footer {
+  height: 170px;
+  background-color: rgb(209, 234, 245);
+}
+
+.wrapperfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navblur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: transparent;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Bookshelf</h1>
+      </nav>
+    </header>
+    <main>
+      <section class="sectioninput">
+        <h2>Masukkan Buku</h2>
+        <form id="inputBooks">
+          <div class="input">
+            <label for="title">Judul Buku</label>
+            <input
+              type="text"
+              id="title"
+              placeholder="Masukkan judul buku"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="author">Penulis</label>
+            <input
+              type="text"
+              id="author"
+              placeholder="Masukkan nama penulis"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="year">Tahun</label>
+            <input
+              type="number"
+              id="year"
+              placeholder="Masukkan tahun terbit"
+              required
+            />
+          </div>
+          <div>
+            <label for="completed">Selesai dibaca</label>
+            <input type="checkbox" id="completed" />
+          </div>
+          <button type="submit" id="sent">Masukkan Buku</button>
+        </form>
+      </section>
+      <section class="sectionsearch">
+        <h2>Cari Buku</h2>
+        <form id="findbook">
+          <input type="text" id="findtitle" placeholder="Masukkan judul buku" />
+          <button type="submit">Cari</button>
+        </form>
+        <div id="searchContent"></div>
+      </section>
+      <section class="sectionbook">
+        <h2>Belum Selesai Dibaca</h2>
+        <div class="booklist" id="notCompleted"></div>
+      </section>
+      <section class="sectionbook">
+        <h2>Selesai Dibaca</h2>
+        <div class="booklist" id="alreadyCompleted"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapperfooter">
+        <p>Bookshelf By Yanuar Faturahman</p>
+        <p>Made With <span style="color: rgb(241, 24, 24)">&#10084;</span></p>
+        <p>&#169; 2022 YANUAR</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
